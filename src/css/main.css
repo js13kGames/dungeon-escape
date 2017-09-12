@@ -1,0 +1,38 @@
+.title-logo {
+    font-size:3em;
+    font-family: cursive;
+    padding:12px 12px 32px 12px;
+    background: linear-gradient(to bottom, #DFA700, #ccc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.game-container {
+    background:linear-gradient(to bottom, #181818, #000);
+    height:100vh;
+    width:100vw;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+}
+
+.button {
+    background: #DFA700;
+    padding: 12px 8px;
+    border-radius: 4px;
+    display:inline-block;
+    border: 2px solid #333;
+    font-family: monospace;
+    font-size:1.8em;
+}
+.game {
+    background: #000;
+    width:640px;
+    height:640px;
+    margin: 0 auto;
+}
