@@ -74,7 +74,7 @@ export default class Player extends BaseClass {
         if(collision) {
 
 
-            if(collision.data == 12) {
+            if(collision.data == 4) {
                 this.room.collision[collision.row][collision.col] = 0;
                 this.emit('reachedExit');
             }

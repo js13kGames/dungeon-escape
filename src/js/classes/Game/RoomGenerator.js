@@ -1,7 +1,7 @@
 import kontra from "../../lib/kontra";
 import {randi} from "../../utils/dom";
-const outerWall = 4;
-const floor = 5;
+const outerWall = 2;
+const floor = 3;
 const obs = 1;
 
 export default class Room {
@@ -38,7 +38,7 @@ export default class Room {
     createExit() {
         let x = randi(this.sizeX), y = randi(this.sizeY);
         let halfY = Math.floor(this.sizeY /2)
-        this.collision[y][x] = 12;
+        this.collision[y][x] = 4;
         this.ClearPath(x,y,x,halfY);
     }
 
@@ -77,12 +77,12 @@ export default class Room {
         let halfY = Math.floor(this.sizeY /2)
         if(top) {
             this.collision[0][x] = 0;
-            this.data[0][x] = 5;
+            this.data[0][x] = 3;
             this.bottomRoom = adjoiningRoom;
             this.ClearPath(x,0,x, halfY);
         } else {
             this.collision[this.sizeY + 1][x] = 0;
-            this.data[this.sizeY + 1][x] = 5;
+            this.data[this.sizeY + 1][x] = 3;
             this.topRoom = adjoiningRoom;
             this.ClearPath(x,this.sizeY + 1,x, halfY);
         }
